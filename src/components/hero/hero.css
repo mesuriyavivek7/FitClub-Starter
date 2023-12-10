@@ -1,0 +1,52 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-h{
+    padding:1rem 2rem;
+    flex: 3;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column; 
+}
+.left-h .the-best-ad{
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding:1.5rem 1.3rem;
+    text-transform: uppercase;
+    color: white;
+    word-spacing:.2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.left-h .the-best-ad>span{
+    z-index: 2;
+}
+.left-h .the-best-ad .emptydiv{
+    position: absolute;
+    background-color:var(--orange);
+    width: 5.4rem;
+    height: 80%;
+    left: 8px;
+    z-index: 1;
+    border-radius: 3rem;
+}
+.left-h .hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.4rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
+
+.right-h{
+    flex: 1;
+}
