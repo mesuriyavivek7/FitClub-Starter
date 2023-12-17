@@ -1,0 +1,60 @@
+.programe{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0rem 2rem;
+}
+
+.programs-header{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.programe .programs-category{
+    display: flex;
+    gap: 1rem;
+}
+
+.programe .programs-category .category{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 2rem;
+    gap: 1rem;
+    color: white;
+    justify-content: space-between;
+}
+.programe .programs-category .category>:nth-child(1){
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+}
+.programe .programs-category .category>:nth-child(2){
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.programe .programs-category .category>:nth-child(3){
+    font-size: .9rem;
+    line-height:1.3rem;
+}
+
+.programe .programs-category .category .join-now{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.programe .programs-category .category .join-now>img{
+    width: 1rem;
+}
+
+.category:hover{
+    background:var(--planCard);
+    cursor: pointer;
+}
