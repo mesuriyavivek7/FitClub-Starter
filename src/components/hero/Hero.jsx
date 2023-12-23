@@ -8,21 +8,23 @@ import hero_images_back from '../../assets/hero_image_back.png'
 import heart from '../../assets/heart.png'
 import calories from '../../assets/calories.png'
 
+import NumberCounter from 'number-counter';
+
 //import motion
 import { motion } from 'framer-motion'
 
 export default function Hero() {
   const transition={type:'spring' , duration:3}
-
+  const mobile=window.innerWidth<=768?true:false
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
       <div className='blur blur-h'></div>
         <div className='left-h'>
           <Header></Header>
 
            <div className='the-best-ad'>
               <motion.div 
-              initial={{left:'238px'}}
+              initial={{left:mobile?"165px":"238px"}}
               whileInView={{left:'8px'}}
               transition={transition}
               className='emptydiv'></motion.div>
@@ -30,7 +32,7 @@ export default function Hero() {
            </div>
            <div className='hero-text'>
              <div>
-                <span className='stroke-text'>Shape</span>
+                <span className='stroke-text'>Shape </span>
                 <span>Your</span>
              </div>
              <div>
@@ -44,15 +46,21 @@ export default function Hero() {
            </div>
            <div className='figures'>
              <div>
-               <span>+140</span>
+               <span>
+               <NumberCounter start={100} end={140} delay='4' preFix="+"></NumberCounter>
+               </span>
                <span>expert coaches</span>
              </div>
              <div>
-               <span>+978</span>
+               <span>
+               <NumberCounter start={200} end={978} delay='4' preFix="+"></NumberCounter>
+               </span>
                <span>member joined</span>
              </div>
              <div>
-               <span>+50</span>
+               <span>
+               <NumberCounter start={1} end={50} delay='4' preFix="+"></NumberCounter>
+               </span>
                <span>fitness programme</span>
              </div>
            </div>

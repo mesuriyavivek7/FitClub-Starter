@@ -3,6 +3,11 @@
     justify-content: space-between;
     align-items: center;
 }
+.header .bars{
+    background-color: var(--appColor);
+    padding: 0.5rem;
+    border-radius: .5px;
+}
 .header .logo{
     height:3rem;
     width:10rem;
@@ -16,5 +21,19 @@
 .header-menu>li:hover{
     cursor: pointer;
     color: var(--orange);
+}
 
+@media screen and (max-width:768px){
+    .header>:nth-child(2){
+        position: fixed;
+        z-index: 99;
+        right: 2rem;
+        top: 1rem;
+
+    }
+    .header-menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
 }

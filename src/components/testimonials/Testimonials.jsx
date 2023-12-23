@@ -13,7 +13,7 @@ export default function Testimonials() {
 
   const transition={type:'spring',duration:3}
   return (
-    <div className='testimonials'>
+    <div className='testimonials' id='testimonials'>
         <div className='left-t'>
            <span>Testimonials</span>
            <span className='stroke-text'>What they Say</span>
@@ -39,11 +39,13 @@ export default function Testimonials() {
             whileInView={{opacity:1,x:0}}
             transition={transition}
            ></motion.div>
+
            <motion.div
             initial={{opacity:0,x:100}}
             whileInView={{opacity:1,x:0}}
             transition={transition}
            ></motion.div>
+           
            <motion.img 
            key={selected}
            initial={{opacity:0,x:100}}

@@ -9,7 +9,7 @@ import {programsData} from '../../data/programsData';
 
 export default function Programs() {
   return (
-    <div className='programe' id='programe'>
+    <div className='programe' id='programs'>
         <div className='programs-header'>
             <span className='stroke-text'>Explore our</span>
             <span>programs</span>
